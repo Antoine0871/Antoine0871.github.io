@@ -1,3 +1,9 @@
+/* Desktops */
+@media (min-width: 768px) { body { padding: 4% 20% } }
+	
+/* Mobiles */
+@media (max-width: 767px) { body { padding: 12% 8% } }
+
 /*  ============= WEB BROWSER RESETS ============ */
 * { margin: 0; padding: 0; border: none }
 *, *::before, *::after { box-sizing: border-box }
@@ -11,6 +17,7 @@ input, button, textarea, select { font: inherit }
 
 /* ================= ENDS ================ */
 
+body { background-color: lightcyan }
 
 h1 {
     font-size: 84px;
@@ -18,16 +25,19 @@ h1 {
     font-weight: normal;
     letter-spacing: -2px;
     margin-bottom: 32px;
+    color : blue;
 }
 
 h2 {
     font-size: 36px;
     margin-bottom: 4px;
+    color : blue;
 }
 
 h3 {
     font-size: 24px;
-    margin-bottom: 4px;  
+    margin-bottom: 4px; 
+    color : blue; 
 }
 
 p {
@@ -35,4 +45,5 @@ p {
     font-family: sans-serif;
     line-height: 1.6;
     margin-bottom: 20px;
+    color : darkblue;
 }
