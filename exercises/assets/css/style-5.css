@@ -21,7 +21,7 @@ input, button, textarea, select { font: inherit }
 /* Web page */
 body {
     background-color: #FFFFBD;
-    font-family: 'Merryweather',serif;
+    font-family: 'Merriweather',serif;
 }
 
 /* Main heading */
@@ -37,7 +37,7 @@ h1 {
 
 /* Small headings */
 h2 {
-    font-size: 26px;
+    font-size: 24px;
     color:#3434B0;
     line-height: 1.5;
     margin-bottom: 42px;
@@ -55,7 +55,7 @@ h3 {
 
 /* Text paragraphs */
 p {
-    font-size: 22px;
+    font-size: 20px;
     color: #455C80;
     line-height: 1.6;
     margin-top: 0;
