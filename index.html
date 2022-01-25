@@ -36,12 +36,12 @@
 
 <body>
     <!-- navigation menu -->
-    <nav class="container-menu menu-dark menu-desktop text-center-mobile">
-        <a href="#"><img src="assets/img/website-logo-sample.png" alt="website logo"></a>
+    <nav class="container-menu menu-dark menu-desktop text-center-mobile menu-sticky">
+        <a href="#"><img src="assets/img/logo.png" alt="website logo"></a>
         <ul>
-            <li><a href="#">My exercices</a></li>
+            <li><a href="#About-me">Me</a></li>
+            <li><a href="#Exercices">My Exercices</a></li>
             <li><a href="#My-projects">My projects</a></li>
-            <li><a href="#">Option Three</a></li>
             <li><a href="#" id="btn-cta"><span>CTA Button</span><i class="fas fa-arrow-right"></i></a></li>
         </ul>
         <div class="item-icon">
@@ -55,8 +55,8 @@
     <header class="hero-block text-center-desktop text-center-mobile">
 
         <div class="hero-text-container">
-            <h1 class="text-shadow fade-in slide-in-top">Antoine Riquet's website</h1>
-            <h2 class="text-shadow fade-in slide-in-left">Front end developper</h2>
+            <h1 class="text-shadow slide-in-top">Antoine Riquet's website</h1>
+            <h2 class="text-shadow slide-in-left">Front end developper</h2>
         </div>
                 
         <div class="hero-bg-media">
@@ -69,7 +69,7 @@
     
     </header>
 
-    <header class="hero-block hero-bg text-center-desktop text-center-mobile">
+    <header class="hero-block hero-bg text-center-desktop text-center-mobile" id="About-me">
 
         <div class="container-text">
             <h2 class="text-shadow">I created this website to showcase some of my recent web design work.</h2>
@@ -89,61 +89,76 @@
 
     </header>
 
+    <main>
+
+        <section class="Exercices" id = "Exercices">
+            <div class="col-1 text-center">
+                <h2>My Exercices</h2>
+                <h3>Over half of my Exercices in Irelande.</h3>
+            </div>
+
+            <ul>
+                <p><a href="exercises/page-1.html">A Tale of Two Cities</a></p>
+                <p><a href="exercises/page-2.html">IBAT Chocolates</a></p>
+                <p><a href="exercises/page-3.html">Prince & Purple Rain</a></p>
+                <p><a href="exercises/page-4.html">Lorem Ipsum Text</a></p>
+                <p><a href="exercises/page-5.html">Vincent van Gogh</a></p> 
+                <p><a href="exercises/page-6.html">Irish Tourism</a></p> 
+                <p><a href="exercises/page-7.html">Smoothies</a></p> 
+                <p><a href="exercises/page-8.html">Software Analytics</a></p> 
+                <p><a href="exercises/page-9.html">The Box Model</a></p> 
+                <p><a href="exercises/page-10.html">Web Page With Panels</a></p> 
+                <p><a href="exercises/hero-text.html">Hero block with animated text</a></p> 
+                <p><a href="exercises/hero-image.html">Hero block with background image</a></p> 
+                <p><a href="exercises/hero-video.html">Hero block with background video</a></p> 
+            </ul>
+        
+        </section>
 
 
+        <section class="container-flex theme-four mobile-col-2 icon-small Myprojects" id="My-projects">
+            <div class="col-1">
+                <h2>My projects</h2>
+                <h3>Over half of my projects in Irelande.</h3>
+            </div>
+            <div class="col-4">
+                <figure class="image"><img src="assets/img/project-van-gogh.jpg" /><img></figure>
+            
+                <h3>Vincent van Gogh</h3>
+                <p>A summary of the life and work of Dutch artist Vincent van Gogh with an embedded and responsive video from YouTube.
 
-    <p>I created this website to showcase some of my recent web design work.</p>
+                </p>
 
-    <p><a href="exercises/page-1.html">A Tale of Two Cities</a></p>
-    <p><a href="exercises/page-2.html">IBAT Chocolates</a></p>
-    <p><a href="exercises/page-3.html">Prince & Purple Rain</a></p>
-    <p><a href="exercises/page-4.html">Lorem Ipsum Text</a></p>
-    <p><a href="exercises/page-5.html">Vincent van Gogh</a></p> 
-    <p><a href="exercises/page-6.html">Irish Tourism</a></p> 
-    <p><a href="exercises/page-7.html">Smoothies</a></p> 
-    <p><a href="exercises/page-8.html">Software Analytics</a></p> 
-    <p><a href="exercises/page-9.html">The Box Model</a></p> 
-    <p><a href="exercises/page-10.html">Web Page With Panels</a></p> 
-    <p><a href="exercises/hero-text.html">Hero block with animated text</a></p> 
-    <p><a href="exercises/hero-image.html">Hero block with background image</a></p> 
-    <p><a href="exercises/hero-video.html">Hero block with background video</a></p> 
+                <a href="portfolio/van-gogh/index.html" class="button-solid">View Project &nbsp;<i class="fas fa-arrow-right"></i></a>	
+            </div>
+            <div class="col-4">
+                <figure class="image"><img src="assets/img/toc-fashion.jpg"/><img></figure>
+            
+            
+                <h3>Snazzy Fashion</h3>
+                <p>A website for a fashion retailer with multiple sections and a background video.</p>
 
+                <a href="portfolio/fashion/index.html" class="button-solid">View Project &nbsp;<i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="col-4">
+                <figure class="image"><img src="assets/img/project-smoothie.jpg"/><img></figure>
+            
+            
+                <h3>Smooth Smoothies</h3>
+                <p>Offering tasty alternatives to sugary and unhealthy snacks for busy, on-the-go, on-trend professionals.</p>
 
+                <a href="portfolio/smoothies/index.html" class="button-solid">View Project &nbsp;<i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="col-4">
+                <figure class="image"><img src="assets/img/project-crypto-wallet.jpg"/><img></figure>
+            
+            
+                <h3>Crypto Wallet</h3>
+                <p>A responsive, multi-column single-page website for a fictitious crypto wallet.</p>
+            </div>
+        </section>
 
-    <section class="container-flex theme-four text-center mobile-col-2 icon-small Myprojects" id="My-projects">
-        <div class="col-1 text-center">
-            <h2>My projects</h2>
-            <h3>Over half of my projects in Irelande.</h3>
-        </div>
-        <div class="col-4">
-            <figure class="image"><img src="assets/img/project-van-gogh.jpg" /><img></figure>
-        
-        
-            <h3>Vincent van Gogh</h3>
-            <p>A summary of the life and work of Dutch artist Vincent van Gogh with an embedded and responsive video from YouTube.</p>
-        </div>
-        <div class="col-4">
-            <figure class="image"><img src="assets/img/toc-fashion.jpg"/><img></figure>
-        
-        
-            <h3>Snazzy Fashion</h3>
-            <p>A website for a fashion retailer with multiple sections and a background video.</p>
-        </div>
-        <div class="col-4">
-            <figure class="image"><img src="assets/img/project-smoothie.jpg"/><img></figure>
-        
-        
-            <h3>Smooth Smoothies</h3>
-            <p>Offering tasty alternatives to sugary and unhealthy snacks for busy, on-the-go, on-trend professionals.</p>
-        </div>
-        <div class="col-4">
-            <figure class="image"><img src="assets/img/project-crypto-wallet.jpg"/><img></figure>
-        
-        
-            <h3>Crypto Wallet</h3>
-            <p>A responsive, multi-column single-page website for a fictitious crypto wallet.</p>
-        </div>
-    </section>
+    </main>
 
     <!-- footer -->
     <footer></footer>

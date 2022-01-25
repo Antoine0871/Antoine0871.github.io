@@ -175,5 +175,50 @@ p {
 .container-menu .item-icon .bar1,.container-menu .item-icon .bar2,.container-menu .item-icon .bar3 { background-color: var(--slate-600) }
 
 .Myprojects{
-  background-color: aqua;
+  background-color:aquamarine;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Exercices{
+  background-color:azure;
+}
+
+.button-solid:hover, 
+.button-solid:active {
+	border-color: blue;
+	background-color: blue;
+	color: #fff;
+	padding: 14px 20px;	
+	text-decoration: none;
+  list-style: none;
+	max-width: 200px;
+	font-weight: bold;
+}
+
+.button-solid:link, 
+.button-solid:visited {
+	border-color: rgb(80,227,194);
+	background-color: rgb(80,227,194);
+	color: #000;
+	padding: 14px 20px;	
+	text-decoration: none;
+  list-style: none;
+	max-width: 200px;
+	font-weight: bold;
+} 
+
+.col-4 h3{
+  text-align: left;
+}
+
+.col-4 p{
+  text-align: left;
+}
+
+.col-4{
+  min-width: 190px;
 }
