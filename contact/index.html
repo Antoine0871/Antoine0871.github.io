@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antoine Riquet - Independent Web and Digital Developer</title>
+    <meta name="description" content="Freelance Web and Digital Developer crafting innovative online experiences on the web and social media.">    
+
+    <!-- Css stylesheet -->
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/lunevedy.css">
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+
+    <!-- Font Awesome 5 icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+
+    <!-- Line Awesome icons -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <!-- Google Material Design Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+    rel="stylesheet">
+
+
+    <link rel="preload" href="assets/videos/hero-image.png">
+
+</head>
+
+
+<body>
+    <!-- navigation menu -->
+    <nav class="container-menu menu-dark menu-desktop text-center-mobile menu-sticky">
+        <a href="#"><img src="../assets/img/logo.png" alt="website logo"></a>
+        <ul>
+            <li><a href="../index.html">Home page</a></li>
+            <li><a href="../exercises/index.html">Exercices</a></li>
+            <li><a href="../index.html">My projects</a></li>
+        </ul>
+        <div class="item-icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+
+    <main>
+        
+
+        <section class="container-contact-form">
+
+                <!-- Contact form starts here -->
+                <form id="contact-form" name="contact-form" accept-charset="utf-8" method="post" action="https://formspree.io/f/mbjwgopw " style="margin-top: 20px;">
+
+                    <div class="contact-form-upper text-center">
+                        <h2>Contact</h2>
+                        <p>If you have a question or, if you want to contact me for business, you can with this form</p>
+                    </div>
+
+                    <!-- Begin contact form fields -->
+
+                    <div class="flex-row">
+                        <div class="item-name">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" name="name" id="full-name" placeholder="Your First and Last Name." required="">
+                        </div>
+                        <div class="item-email">
+                            <label for="email-address">Email</label>
+                            <input type="email" name="_replyto" id="email-address" placeholder="Your Email Address." required="">
+                        </div>
+                    </div>
+
+                    <div class="flex-row">
+                        <div class="item-textarea">
+                            <label for="message">Message</label>
+                            <textarea rows="5" name="message" id="message" placeholder="Your Message." required=""></textarea>
+                        </div>
+
+                        <div class="item-btn">
+                            <button id="btn-submit" type="submit"><span>Send</span><i class="fas fa-arrow-circle-right"></i></button> 
+                        </div>
+                    </div>
+
+                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                    <!-- End contact form fields -->
+
+                </form><!-- Contact form ends here -->
+        </section><!-- End container for contact form -->
+
+    </main>
+
+
+
+    <!-- footer -->
+    <footer></footer>
+       
+    <script src="../assets/js/menu.js"></script>
+</body>
+</html>

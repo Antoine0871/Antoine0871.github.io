@@ -175,9 +175,9 @@ p {
 .container-menu .item-icon .bar1,.container-menu .item-icon .bar2,.container-menu .item-icon .bar3 { background-color: var(--slate-600) }
 
 .Myprojects{
-  background-color:aquamarine;
+  background-color:azure;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 16  16px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -185,6 +185,7 @@ p {
 
 .Exercices{
   background-color:azure;
+  padding: -80px 16px;
 }
 
 .button-solid:hover, 
@@ -221,4 +222,24 @@ p {
 
 .col-4{
   min-width: 190px;
+}
+
+
+.Contact{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 4% 0%;
+  background-color: aquamarine;
+}
+
+.icone{
+  font-size: 400%;
+}
+
+.element_contact{
+  align-items: center;
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  font-size: 110%;
 }
