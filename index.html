@@ -31,6 +31,19 @@
 
     <link rel="preload" href="assets/videos/hero-image.png">
 
+    <!-- Cookies message -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTCW2WXNPV"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-TTCW2WXNPV');
+    </script>
+    
 </head>
 
 
@@ -136,5 +149,23 @@
     <footer></footer>
        
     <script src="assets/js/menu.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+
+    <script>
+        window.cookieconsent.initialise({
+        "palette": {
+            "popup": {
+            "background": "#000"
+            },
+            "button": {
+            "background": "#f1d600"
+            }
+        },
+        "content": {
+            "href": "https://Antoine0871.github.io/privacy.html"
+        }
+        });
+    </script>
 </body>
 </html>
