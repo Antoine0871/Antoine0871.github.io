@@ -136,3 +136,53 @@
 /* Global font */
 body { font-family: var(--global-font) }
 
+header.hero-block a.btn-primary:link,
+header.hero-block a.btn-primary:visited { border-color: var(--white-000) }
+
+header.hero-block a.btn-primary:link,
+header.hero-block a.btn-primary:visited { background-color: var(--trans-000) }
+
+header.hero-block a.btn-secondary:link,
+header.hero-block a.btn-secondary:visited {
+    background-color: var(--ontrend-800);
+    border-color: transparent;
+}
+
+.container-menu.menu-sticky.menu-desktop.menu-on-scroll,
+.container-menu.menu-sticky.menu-mobile.menu-on-scroll,
+.container-menu.menu-sticky.menu-mobile ul.mobile-display { background-color: var(--trans-000) }
+.container-menu.menu-sticky.menu-desktop.menu-on-scroll,
+.container-menu.menu-sticky.menu-mobile.menu-on-scroll,
+.container-menu.menu-sticky.menu-mobile ul.mobile-display { background-color: var(--trans-000) }
+.container-menu.menu-sticky.menu-desktop.menu-on-scroll,
+.container-menu.menu-sticky.menu-mobile.menu-on-scroll,
+.container-menu.menu-sticky.menu-mobile ul.mobile-display { background-color: var(--trans-000) }
+.container-menu.menu-sticky.menu-desktop.menu-on-scroll,
+.container-menu.menu-sticky.menu-mobile.menu-on-scroll,
+.container-menu.menu-sticky.menu-mobile ul.mobile-display { background-color: var(--trans-000) }
+.container-menu.menu-desktop { background-color: var(--trans-000) }
+.container-menu.menu-mobile { background-color: var(--trans-000) }
+.container-menu.menu-mobile ul.mobile-display { background-color: var(--trans-000) }
+.container-menu a:link,
+.container-menu a:visited { color: var(--white-000) }
+.container-menu a#btn-cta:link,
+.container-menu a#btn-cta:visited { color: var(--white-000) }
+.container-menu a#btn-cta:link,
+.container-menu a#btn-cta:visited { background-color: var(--red-500) }
+.container-menu a#btn-cta:link,
+.container-menu a#btn-cta:visited { border-color: transparent }
+
+.theme-one { background-color: var(--ontrend-700) }
+.theme-one h2 { color: var(--white-000) } 
+.theme-one h3 { color: var(--white-000) } 
+.theme-one .upper-label { color: var(--white-000) }
+.theme-one p { color: var(--white-000) }
+.theme-one li { color: var(--white-000) }
+.theme-one .col-3 figure.icon { color: var(--blue-100) }
+
+.theme-two { background-color: var(--ontrend-800) }
+.theme-two h2 { color: var(--white-000) } 
+.theme-two h3 { color: var(--white-000) } 
+.theme-two .upper-label { color: var(--white-000) }
+.theme-two p { color: var(--white-000) }
+.theme-two li { color: var(--white-000) }
