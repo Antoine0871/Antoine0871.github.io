@@ -186,3 +186,15 @@ header.hero-block a.btn-secondary:visited {
 .theme-two .upper-label { color: var(--white-000) }
 .theme-two p { color: var(--white-000) }
 .theme-two li { color: var(--white-000) }
+
+h1{
+    font-family: Hubballi,sans-serif;    
+}
+
+h2{
+    font-family: Hubballi,sans-serif;    
+}
+
+p{
+    font-family: Hubballi,sans-serif;    
+}
