@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator Project | Mary Smith | Front-end Developer | </title>
+    <meta name="description" content="Calculates the tip for a restaurant bill based on the level of service and the number of customers.">
+
+	<!-- Stylesheets -->
+    <link rel="stylesheet" href="../../../assets/css/css-javascript.css" />
+    <!-- <link rel="stylesheet" href="../../assets/css/lunadoge.min.css" /> -->
+    <link rel="stylesheet" href="../../../assets/css/lunevedy.css" />
+
+
+    <style>
+
+@media (min-width:1200px){header, section{padding:2% calc((100% - 800px)/ 2) 3% calc((100% - 800px)/ 2);margin:0 auto}}@media (min-width:1025px) and (max-width:1199px){header, section{padding:3% 14% 4% 14%}}@media (min-width:768px) and (max-width:1024px){header, section{padding:3% 8% 4% 8%}}@media (max-width:767px){header, section{padding:6% 13% 9% 13%}}h1 .font-mono{color:#888}body{font-family:sans-serif}li,p{font-size:22px;line-height:1.5}li{margin-bottom:12px}
+        input, select { font-size: 20px; padding: 4px }
+
+        .btn{
+            background-color: blue;
+            color: #fff;
+            padding: 16px 40px;
+            font-size: 20px;
+            outline : 0;
+            border-width: 0;
+            margin-top: 32px;
+            border-radius: 50px;
+            display:block;
+        }   
+        .btn:hover{
+            background-color: darkgreen;
+        }
+        .btn i{margin-right: 10px;}
+
+
+        #color-dislay{font-weight: 400; color: lightgray}
+
+        .bg-gray{background-color: lightgray; padding:10px 20px; margin-bottom: 32px;}
+        .bg-lightblue{background-color: lightblue; padding:10px 20px;}
+        body{background-color: lightyellow;}
+
+        /* ============ Header Colours =============*/
+        header.hero-block-js { background-color: var(--gray-200) }
+        header.hero-block-js h1 { color: #222 }
+        header.hero-block-js h2 { color: var(--gray-700) }
+
+        /* Main Colours */
+        .theme-js { 
+            background-color: #fff;
+            /* background-image: linear-gradient(147deg, #000000 0%, #04619f 74%); */
+        }
+
+        .theme-js .col-2 { background-color: var(--gray-200) }
+        .theme-js h3 { color: #222 }
+        .theme-js p { color: #222 }
+
+        /* Button Colours: passive state */
+        .theme-js a.btn { color: #fff; background-color: blue; transition: 0.2s }
+
+        /* Button Colours: active state */
+        .theme-js a.btn:hover { background-color: darkblue }
+
+        /* .theme-js a.btn { background-image: linear-gradient(to right,#e052a0,#f15c41) } */
+        /* .theme-js a.btn:hover { filter: brightness(160%) saturate(140%) } */
+
+    </style>
+
+	<!-- Font Awesome 6.1 icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+
+<body>
+
+    <!-- navigation menu -->
+    <nav class="container-menu menu-dark menu-desktop text-center-mobile menu-sticky">
+        <a href="#"><img src="../../../assets/img/logo.png" alt="website logo"></a>
+        <ul>
+            <li><a href="../../../index.html">Home page</a></li>
+            <li><a href="../../../exercises/index.html">Exercices</a></li>
+            <li><a href="../../../index.html">My projects</a></li>
+        </ul>
+        <div class="item-icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+        
+    <!-- header hero block -->
+    <header class="hero-block hero-block-js">
+        <div class="hero-text-container">
+            <h1>Tip Calculator <span>JavaScript Project</span></h1>
+            <h2>Calculates the tip for a restaurant bill based on the level of service and the number of customers. View my complete collection of <a href="../index.html">JavaScript projects</a>.</h2>
+        </div>
+    </header>
+
+    <!-- main content with sections -->
+    <main>
+        
+        <section class="container-flex theme-js" id="conta">
+            <div class="bg-gray">
+                <form>
+                <p>How much was your bill?
+                
+                    € <input id="billAmount" type="text" placeholder="Bill Amount" maxlength="10000"></p>
+            
+                    <p>How was your service? <select id="serviceQuality">
+                        <option disabled selected value="0">-- Choose an Option --</option>
+                        <option value="0.3">30&#37; &#45; Outstanding</option>
+                        <option value="0.2">20&#37; &#45; Good</option>
+                        <option value="0.15">15&#37; &#45; It was OK</option>
+                        <option value="0.1">10&#37; &#45; Bad</option>
+                        <option value="0.05">5&#37; &#45; Terrible</option>
+                    </select></p>
+            
+                </form>
+
+                <p>How many people are sharing the bill?
+                <input id="numOfPeople" type="text" placeholder="Number of People" maxlength="
+                20" style="width: 32px"> people</p>
+
+                <button type="button" class="btn" id="btn-calculate"> <i class="fa-solid fa-calculator"></i>Calculate Tip</button>
+        </div>
+        <!--calculator end-->
+        
+        <!--totalTip -->
+        <div id="tipDisplayBox" class="bg-lightblue">
+            <p>Total tip: €<span id="tipTotal"></span></p>
+            <p>Tip each: <b>€<span id="tipEach"></span></b></p>
+        </div>
+        </section>
+
+    </main>
+
+    <script>
+        
+        document.querySelector("#tipDisplayBox").style.display = "none";
+
+        //click to call function
+        document.getElementById("btn-calculate").onclick = () => calculateTip();
+
+        //Calculate Tip
+        function calculateTip(){
+            let billAmount = document.getElementById("billAmount").value;
+            let serviceQuality = document.getElementById("serviceQuality").value;
+            let numOfPeople = document.getElementById("numOfPeople").value;
+
+            //validate input
+            if(billAmount == "" || serviceQuality == 0){
+                alert("Please enter values");
+                return;
+            }
+
+            if(isNaN(billAmount)){
+                alert("Please enter a number in the Bill Amount field.")
+                return
+            }
+
+            if(isNaN(numOfPeople)){
+                alert("Please enter a numOfPeople Amount field.")
+                return
+            }
+
+            //calculate tip
+            let tipTotal = (billAmount * serviceQuality)
+
+            //round to two decimal places
+            tipTotal = Math.round(tipTotal*100)/100;
+
+            //next line allows us to always have two digits after decimal point
+            tipTotal = tipTotal.toFixed(2);
+            console.log(`tip total is : ${tipTotal}`)
+
+            //Display the tip
+            document.getElementById("tipDisplayBox").style.display = "block";
+
+            //check to see if this input is empty or less than or equal to 1
+            if(numOfPeople === "" || numOfPeople <= 1){
+                numOfPeople = 1;
+                tipEach = tipTotal;
+            }
+
+            document.getElementById("tipTotal").textContent = tipTotal;
+            document.getElementById("tipEach").textContent = (tipTotal/numOfPeople).toFixed(2)
+
+
+        }
+    </script>    
+
+    
+    <!-- footer -->
+	<footer>
+
+		<h2>Antoine RIQUET</h2>
+
+		<h3>Excellence in digital creation</h3>
+
+		<ul class="footer-links">
+			<li><a href="../../../index.html">Home</a></li>
+			<li><a href="../../../index.html">Portfolio</a></li>
+			<li><a href="../../../contact/index.html">Contact</a></li>
+		</ul>
+
+		<ul class="footer-icons">
+			<li><a href="https://github.com/Antoine0871" target="_blank"><i class="fab fa-github-square"></i></a></li>
+		</ul>
+
+		<p class="index.html"> <a href="../../../privacy.html" style="color: #fff; background-color:transparent;">Privacy &amp; Legal</a> </p>
+       
+    </footer>
+
+    <script src="../../../assets/js/menu.js"></script>
+
+
+</body>
+</html>
+
+
+
+
+
+

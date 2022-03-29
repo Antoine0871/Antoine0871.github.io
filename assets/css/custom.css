@@ -136,3 +136,18 @@
 /* Global font */
 body { font-family: var(--global-font) }
 
+footer p.privacy a {color: white !important}
+
+@media (max-width: 767px) {
+    footer ul.footer-links, footer ul.footer-icons {
+        
+        margin: 0;
+        text-align : left;
+        
+        
+    }
+} 
+
+html.fontawesome-i2svg-active.fontawesome-i2svg-complete body footer ul.footer-links li a {
+    text-decoration: none;
+}
